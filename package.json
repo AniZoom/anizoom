@@ -1,0 +1,43 @@
+{
+  "name": "anizoom",
+  "version": "1.0.0",
+  "description": "Anime client built with Nuxt 3 using data provided from Anilist API",
+  "author": "AniZoom",
+  "type": "module",
+  "homepage": "https://github.com/AniZoom/anizoom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AniZoom/anizoom"
+  },
+  "bugs": {
+    "url": "https://github.com/AniZoom/anizoom/issues"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port=5173 --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "npm run lint:eslint && npm run lint:stylelint",
+    "lint:eslint": "eslint --ext .ts,.js,.vue --fix --ignore-path .gitignore .",
+    "lint:stylelint": "stylelint \"**/*.css\" --fix"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.2.0",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@nuxtjs/sitemap": "^5.1.1",
+    "@types/bootstrap": "^5.2.10",
+    "date-fns": "^3.3.1",
+    "eslint": "^8.57.0",
+    "gql-query-builder": "^3.8.0",
+    "nuxt": "^3.10.3",
+    "nuxt-icon": "^0.6.9",
+    "nuxt-primevue": "^0.3.1",
+    "stylelint-config-standard": "^36.0.0"
+  },
+  "dependencies": {
+    "@nuxtjs/google-fonts": "^3.1.3",
+    "bootstrap": "^5.3.3",
+    "primevue": "^3.49.1"
+  }
+}

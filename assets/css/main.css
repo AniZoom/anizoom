@@ -1,0 +1,247 @@
+/* main.css */
+
+.row>* {
+  width: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.anime-row>* {
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+a>*:hover, a:hover {
+  color: var(--bs-link-hover-color)!important;
+}
+
+#search .row>* {
+  width: inherit;
+}
+
+.banner, #overlay {
+  height: 500px;
+  justify-content: end;
+}
+
+#anime-page #front {
+  height: 190px;
+}
+
+img, iframe, .image {
+  border-radius: 6px;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+#front img {
+  height: 470px;
+  margin-right: 14rem!important;
+}
+
+#overlay {
+  background-image: linear-gradient(90deg, rgba(var(--bs-dark-bg-rbg), .9) 30%, rgb(255 255 255 / 0%) 70%);
+}
+
+#info {
+  left: 3%;
+  width: 48%!important;
+  text-shadow: 1px 1px 1px black;
+}
+
+.stars {
+  filter: hue-rotate(204deg) saturate(1) brightness(1.5);
+}
+
+#blur {
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: .75;
+}
+
+#anime-page #blur {
+  opacity: .9;
+}
+
+.image {
+  height: 380px;
+}
+
+#anime-page #details {
+  justify-content: space-between;
+}
+
+@media only screen and (width <= 1500px) {
+  .image {
+    height: 300px;
+  }
+}
+
+@media only screen and (width <= 1199px) {
+  #front img {
+    margin-right: 6rem!important;
+  }
+
+  .image {
+    height: 250px;
+  }
+}
+
+@media only screen and (width <= 991px) {
+  #front img {
+    margin-right: 0!important;
+  }
+
+  .image {
+    height: 300px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .banner {
+    align-items: flex-end!important;
+    height: auto;
+    justify-content: center;
+  }
+
+  #front img {
+    width: 60%;
+    height: auto;
+    padding-bottom: 180px;
+    margin-right: 0!important;
+  }
+
+  #info {
+  width: 95%!important;
+  padding-bottom: 1rem;
+  left: 2%;
+  }
+
+  #info h2 {
+  font-size: 1.2rem;
+  }
+
+  #info h6, #category-desc h6, #anime-page h6 {
+  font-size: .75rem;
+  }
+
+  #overlay {
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(var(--bs-dark-bg-rbg), .9) 30%, rgb(255 255 255 / 0%) 70%);
+  }
+
+  #anime-nav a>* {
+    font-size: .8rem!important;
+  }
+  
+  #preview .row>* {
+    width: 100%;
+  }
+
+  .modal.show {
+    padding-bottom: 8rem!important;
+  }
+
+  #preview h3 {
+    font-size: 1.1rem;
+  }
+
+  small {
+    font-size: .7rem;
+  }
+
+  .image {
+    height: 220px;
+  }
+
+  #anime-page #details {
+    justify-content: center;
+  }
+}
+
+@media only screen and (width <= 575px) {
+  .image {
+    height: 270px;
+  }
+}
+
+.sidebar, .sidebar .nav {
+  width: 72px!important;
+}
+
+.modal-content, .modal-header {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.modal-body {
+  padding:0;
+}
+
+.btn-close {
+  position:absolute;
+  right:-30px;
+  top:0;
+}
+
+.modal.show {
+  display: inline-table!important;
+}
+
+input {
+  font-size: 24px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.anime-row {
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.nuxt-loading-indicator {
+  background: repeating-linear-gradient(to right,#fff 0%,#ffc575 50%,var(--bs-primary) 100%)!important;
+}
+
+#menu .router-link-active {
+  color: var(--bs-primary)!important;
+}
+
+.scale-on-hover {
+  transition: .3s linear;
+}
+
+.scale-on-hover:hover {
+  transform: scale(1.1);
+}
+
+#anime-nav .router-link-active>* {
+  border-bottom: 2px solid var(--bs-primary);
+  color: var(--bs-primary);
+}
+
+#episodes a:hover .invisible {
+  visibility: visible!important;
+  font-size: 1.6rem;
+}
+
+#episodes a:hover img {
+  opacity: .4;
+}
